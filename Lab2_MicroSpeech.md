@@ -1,6 +1,5 @@
 # Lab 2 - Micro Speech
 
-Copilot assistance was crucial for part 1 and 2b C++ tasks
 
 ## Part 1: Exported model integration 
 Trained a TensorFlow audio model using 49×40 spectrogram inputs (30 ms window, 20 ms stride, 16 kHz) and exported it as eric_updated.tflite. Integrated the model into the C++ micro-speech project by updating includes, ops, arena size, and build files. Verified successful inference <br/>
@@ -185,6 +184,7 @@ Accuracy with augmentation:
 <img width="1308" height="546" alt="image" src="media/embedded5.png" />
 
 Therefore it can be seen that there was a slight improvement in accuracy but the increased gap between accuracy and validation accuracy does indicate that the augmented model may be more overfit than the original.
+
 
 
 
