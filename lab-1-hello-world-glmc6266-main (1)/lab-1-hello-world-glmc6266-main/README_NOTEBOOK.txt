@@ -1,1 +1,0 @@
-I obtained the training data using the provided notebook in our assignment. I also initially did not use version control and had to move work over. 
