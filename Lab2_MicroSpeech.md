@@ -51,7 +51,7 @@ tflite_model = converter.convert()
 ```
 VSCode OUTPUT:
 <br/>
-<img width="844" height="422" alt="image" src="https://github.com/user-attachments/assets/a19e0972-fac8-41ff-bf45-864bd64306da" />
+<img width="844" height="422" alt="image" src="media/embedded1.png" />
 
 ## Part 2: Custom audio (2a/2b)
 Recorded and tested custom 1 s audio clips (myyes, myno, mydown). Confirmed correct predictions in both Colab (via TFLite interpreter) and the embedded C++ mock-audio stream after converting the clips with generate.sh
@@ -62,12 +62,12 @@ Audio samples recorded and added to repo as: <br/>
 <br/><br/>
 Colab Output with correct prediction:
 <br/>
-<img width="1457" height="521" alt="image" src="https://github.com/user-attachments/assets/0cccd21b-fd7d-4ccc-a30a-9091e0f247db" />
+<img width="1457" height="521" alt="image" src="media/embedded2.png" />
 
 ### 2b:
 VScode Output of custom data
 <br/>
-<img width="848" height="250" alt="image" src="https://github.com/user-attachments/assets/fe1db0f7-8612-41b4-a8d2-1f85ed350dfc" />
+<img width="848" height="250" alt="image" src="media/embedded3.png" />
 
 The model was able to successfully predict my audio files with an occasional incorrect predicition that seemed like a sample/timing issue. 
  
@@ -178,13 +178,14 @@ for fname in audio_files:
 ```
 Accuracy without augmentation:
 <br/>
-<img width="1321" height="537" alt="image" src="https://github.com/user-attachments/assets/36577261-75a1-4cc4-9b68-9e82c1b88f0c" />
+<img width="1321" height="537" alt="image" src="media/embedded4.png" />
 <br/>
 Accuracy with augmentation:
 <br/>
-<img width="1308" height="546" alt="image" src="https://github.com/user-attachments/assets/e12fd752-71f5-402b-9eb7-4377572a5534" />
+<img width="1308" height="546" alt="image" src="media/embedded5.png" />
 
 Therefore it can be seen that there was a slight improvement in accuracy but the increased gap between accuracy and validation accuracy does indicate that the augmented model may be more overfit than the original.
+
 
 
 
